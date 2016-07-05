@@ -18,6 +18,19 @@ Event Processing Mode는 Stream
 
 Knowledge Sessions는 새로 추가후에 type="stateful" default="true" clockType="realtime" 으로 선택
 
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="test" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="test" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="kr.co.killers.jbpm.customWorkItemHandler.HelloWorkItemHandler" name="HelloWorkItemHandler"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
+</kmodule>
+
+
+
+
 WorkDefinitions.wid를 클릭해서 아래 내욜을 추가 
 
  [
@@ -25,6 +38,7 @@ WorkDefinitions.wid를 클릭해서 아래 내욜을 추가
     "displayName" : "Hello World!",
     "icon" : "defaultservicenodeicon.png"
   ] 
+  
   
   이제 bpmn을 생성시켜서 확인 
 
