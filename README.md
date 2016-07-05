@@ -28,7 +28,7 @@ WorkDefinitions.wid를 클릭해서 아래 내욜을 추가
   
   이제 bpmn을 생성시켜서 확인 
 
-
+이내용은 이블로그를 참고(http://fxapps.blogspot.kr/2015/04/creating-custom-work-item-handler-in.html)
 
 
 
